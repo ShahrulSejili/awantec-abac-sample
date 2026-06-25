@@ -1,0 +1,1 @@
+export class BaseSlide { constructor(t, o) { this.container = t, this.data = o, this.abortController = new AbortController } mount() { } unmount() { this.abortController.abort(), this.container.innerHTML = "" } }
